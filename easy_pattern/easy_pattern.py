@@ -5,6 +5,7 @@ DIGIT = '\d'
 NON_DIGIT = '\D'
 WHITESPACE = '\s'
 NON_WHITESPACE = '\S'
+ALPHA = '[a-zA-Z]'
 ALPHANUM = '\w'
 NON_ALPHANUM = '\W'
 
@@ -29,21 +30,21 @@ def between(start, end, string):
     return string + '{' + str(start) + ',' + str(end) + '}'
 
 
-class RegEx:
+class Pattern:
 
     def __init__(self):
-        self.regex = ''
+        self.pattern = ''
 
     def starts_with(self, start_str):
-        self.regex += start_str
+        self.pattern += start_str
         return self
 
     def followed_by(self, next_string):
-        self.regex += next_string
+        self.pattern += next_string
         return self
 
     def __str__(self):
-        return self.regex
+        return self.pattern
 
     def __repr__(self):
         return self._regex
