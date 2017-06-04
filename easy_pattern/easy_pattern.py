@@ -14,6 +14,10 @@ def zero_or_more(string):
     return string + '*'
 
 
+def zero_or_once(string):
+    return string + '?'
+
+
 def one_or_more(string):
     return string + '+'
 
