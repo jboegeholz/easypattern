@@ -1,6 +1,6 @@
-from distutils.core import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name='easy_pattern',
     version='0.1',
     packages=['easy_pattern'],
