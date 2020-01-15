@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='easy_pattern',
-    version='0.1',
+    version='0.2',
     packages=['easy_pattern'],
     url='https://github.com/jboegeholz/easypattern',
     download_url='https://github.com/jboegeholz/easypattern/archive/0.1.tar.gz',

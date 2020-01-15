@@ -47,6 +47,9 @@ class Pattern:
         self.pattern += next_string
         return self
 
+    def not_followed_by(self, next_string):
+        self.pattern += "[^" + next_string + "]"
+
     def __str__(self):
         return self.pattern
 

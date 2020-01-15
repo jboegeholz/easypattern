@@ -34,7 +34,6 @@ class PatternTest(unittest.TestCase):
         regex.starts_with(zero_or_more(DIGIT))
         print(regex)
         p = re.compile(regex.pattern)
-        print p.findall('12345')
         self.assertEqual(p.findall('12345'), ['12345', ''])
 
     def test_at_least_three_digits(self):
@@ -52,6 +51,12 @@ class PatternTest(unittest.TestCase):
     def test_digit_followed_by_non_digit(self):
         regex = Pattern()
         regex.starts_with(DIGIT).followed_by(one_or_more(NON_DIGIT))
+        p = re.compile(regex.pattern)
+        self.assertEqual(p.findall('1a'), ['1a'])
+
+    def test_digit_not_followed_by(self):
+        regex = Pattern()
+        regex.starts_with(DIGIT).not_followed_by(DIGIT)
         p = re.compile(regex.pattern)
         self.assertEqual(p.findall('1a'), ['1a'])
 
