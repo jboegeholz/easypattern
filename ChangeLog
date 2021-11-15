@@ -1,0 +1,25 @@
+CHANGES
+=======
+
+0.3.0
+-----
+
+* add not followed by
+* migrate from distutils to setuptools
+
+0.2
+---
+
+* refactor method name
+* Update easy\_pattern.py
+* refactor name
+* add travis status to readme
+* rework travis config
+* add travis config
+* add download\_url
+
+0.1
+---
+
+* initial commit
+* Initial commit
