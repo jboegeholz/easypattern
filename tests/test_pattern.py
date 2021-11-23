@@ -32,7 +32,6 @@ class PatternTest(unittest.TestCase):
     def test_zero_or_more_digits(self):
         regex = Pattern()
         regex.starts_with(zero_or_more(DIGIT))
-        print(regex)
         p = re.compile(regex.pattern)
         self.assertEqual(p.findall('12345'), ['12345', ''])
 

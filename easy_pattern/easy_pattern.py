@@ -54,7 +54,7 @@ class Pattern:
         return self.pattern
 
     def __repr__(self):
-        return self._regex
+        return self.pattern
 
 
 
