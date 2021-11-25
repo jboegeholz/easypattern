@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* fix unresolved reference
 * add pbr for releases
 
 0.3.0

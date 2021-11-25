@@ -1,2 +1,3 @@
 pytest
 pbr
+wheel
