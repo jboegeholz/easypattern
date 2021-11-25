@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* add wheel
 * fix unresolved reference
 * add pbr for releases
 
