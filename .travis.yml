@@ -1,10 +1,9 @@
 language: python
 python:
   - "2.7"
-  - "3.4"
-  - "3.7"
   - "3.8"
   - "3.9"
+  - "3.10"
 
 script:
- - if [[ $TRAVIS_PYTHON_VERSION == '3.7' ]]; then python -m unittest discover ./tests; fi
+ - if [[ $TRAVIS_PYTHON_VERSION == '3.10' ]]; then python -m unittest discover ./tests; fi

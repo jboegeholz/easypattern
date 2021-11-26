@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+0.4.0
+MAJOR.MINOR.PATCH
+
+-----
+
+* update readme for travis-ci
+* update readme add python 3.9 to travis yaml
 * add wheel
 * fix unresolved reference
 * add pbr for releases

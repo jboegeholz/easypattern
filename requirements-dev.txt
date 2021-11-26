@@ -1,3 +1,4 @@
 pytest
 pbr
 wheel
+twine
