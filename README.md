@@ -1,7 +1,8 @@
 # easypattern
 A Pseudo-DSL for Python RegEx
 
-#Travis-CI
+# Travis-CI
+
 [![Build Status](https://app.travis-ci.com/jboegeholz/easypattern.svg?branch=master)](https://app.travis-ci.com/jboegeholz/easypattern)
 
 # Build the package
