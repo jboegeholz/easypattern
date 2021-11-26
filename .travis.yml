@@ -6,4 +6,4 @@ python:
   - "3.10-dev"
 
 script:
- - if [[ $TRAVIS_PYTHON_VERSION == '3.9' ]]; then python -m unittest discover ./tests; fi
+ - python -m unittest discover ./tests
