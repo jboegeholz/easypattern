@@ -2,3 +2,4 @@ pytest
 pbr
 wheel
 twine
+pyhamcrest

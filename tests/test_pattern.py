@@ -1,6 +1,8 @@
 import unittest
 import re
 from easy_pattern import *
+from hamcrest import *
+
 
 
 class PatternTest(unittest.TestCase):
@@ -9,7 +11,7 @@ class PatternTest(unittest.TestCase):
         pattern = Pattern()
         pattern.starts_with(DIGIT)
         p = re.compile(pattern.pattern)
-        self.assertEqual(p.findall('1'), ['1'])
+        assert_that(p.findall('1'), equal_to(['1']))
 
     def test_non_digit(self):
         regex = Pattern()
