@@ -2,13 +2,13 @@ pipeline {
     agent any
 
 	environment{
-
+	    NEW_VERSION = '1.3.0'
 	}
     stages {
         stage('Build') {
 
             steps {
-                echo 'Building..'
+                echo 'Building new version ${NEW_VERSION}'
             }
         }
         stage('Test') {
@@ -33,7 +33,9 @@ pipeline {
         }
         stage('Deploy') {
             when {
-                branch 'release'
+                expression {
+                    BRANCH_NAME == 'main'
+                }
             }
             steps {
                 echo 'Deploying....'
