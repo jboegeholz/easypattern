@@ -1,13 +1,13 @@
 
 
 ANY_CHAR = '.'
-DIGIT = '\d'
-NON_DIGIT = '\D'
-WHITESPACE = '\s'
-NON_WHITESPACE = '\S'
+DIGIT = r'\d'
+NON_DIGIT = r'\D'
+WHITESPACE = r'\s'
+NON_WHITESPACE = r'\S'
 ALPHA = '[a-zA-Z]'
-ALPHANUM = '\w'
-NON_ALPHANUM = '\W'
+ALPHANUM = r'\w'
+NON_ALPHANUM = r'\W'
 
 
 def zero_or_more(string):
