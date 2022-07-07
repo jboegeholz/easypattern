@@ -1,5 +1,6 @@
 pytest
 pbr
 wheel
+tox
 twine
 pyhamcrest
