@@ -1,6 +1,8 @@
-pytest
 pbr
-wheel
+pyhamcrest
+pytest
+pytest-cov
+coverage
 tox
 twine
-pyhamcrest
+wheel

@@ -1,9 +1,21 @@
 CHANGES
 =======
 
-0.4.0
-MAJOR.MINOR.PATCH
+* fix deprecation warnings
+* add more python versions
+* add tox
+* rework jenkinsfile
+* rework jenkinsfile
+* add newline
+* rework for pytest
+* add jenkinsfile add hamcrest
+* update to focal
+* run tests on all python versions
+* update readme
+* update python version
+* update python version add twine
 
+0.4.0
 -----
 
 * update readme for travis-ci
