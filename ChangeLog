@@ -1,6 +1,8 @@
 CHANGES
 =======
 
+* add python versions
+* rework tox.ini
 * fix deprecation warnings
 * add more python versions
 * add tox
